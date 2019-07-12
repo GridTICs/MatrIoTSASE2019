@@ -1,13 +1,12 @@
 # MatrIoTSASE2019
 
 # Workshop Matr IoT para SASE 2019 - Simposio Argentino de Sistemas Embebidos 
+
 ## Instaladores
 
-Instala en tu celular [Mat|r Viewer]( https://play.google.com/store/apps/details?id=com.inosur.matr)
-
-Mosquitto
-
-Arduino IDE 
+* Instala en tu celular [Mat|r Viewer]( https://play.google.com/store/apps/details?id=com.inosur.matr)
+* Para testear MQTT sin necesidad de sensores usaremos [Mosquitto]( https://mosquitto.org/download/)
+* Para programar sobre nodeMCU usamos el [Arduino IDE ](https://www.arduino.cc/en/Main/Software). Esta es la plataforma hardware sobre la cual trabajaremos en el taller
 
 
 ## Slides
