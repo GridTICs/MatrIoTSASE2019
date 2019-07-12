@@ -6,4 +6,7 @@
 
 #define MY_FINGERPRINT "Tu_Fingerprint"
 
+// Fingerprint of the broker CA
+// openssl x509 -in  mqttserver.crt -sha1 -noout -fingerprint
+
 #endif
