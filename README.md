@@ -3,7 +3,7 @@
 # Workshop Matr IoT para SASE 2019 - Simposio Argentino de Sistemas Embebidos 
 ## Instaladores
 
-Mat|r Viewer
+Instala en tu celular [Mat|r Viewer]( https://play.google.com/store/apps/details?id=com.inosur.matr)
 
 Mosquitto
 
@@ -22,7 +22,7 @@ Arduino IDE
 
 
 
-## Test you Mat|r app with mosquitto
+## Test you Mat|r app with mosquitto - SASE2019-tutorial example
 
 ### Channel home
 
