@@ -9,10 +9,16 @@ Realiza un Fork de la misma
 
 Crea los canales MQTT
 
+
+![Create channel command](channels.gif)
+
 ## Dispositivo
 
 Configura un dispositivo y se descargarán los certificados. ¡Consérvalos!
 Estos certificados luego se guardaran en tu placa nodeMCU
+
+
+![Create channel command](device.gif)
 
 ## Test you Mat|r app with mosquitto - SASE2019-tutorial example
 
