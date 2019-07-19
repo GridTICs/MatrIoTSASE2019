@@ -67,11 +67,12 @@ Dentro de esta carpeta colocaremos los archivos con los certificados.
 ![certificados](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/certificados.png)
 
 Luego tendremos que ir a tool -> Flash Size:
+
 Allí deberemos seleccionar la cantidad de memoria que ocuparan nuestros certificados. En este caso seleccionamos 1 MB debido a que la carpeta "data" es de solo 4 KB.
 
 ![Flash-Size](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/Flash-Size.png) 
 
-Luego en el IDE Arduino nos dirigiremos a la seccion tool -> ESP8266 Sketch Data Upload.
+Por último, en el IDE Arduino nos dirigiremos a la seccion tool -> ESP8266 Sketch Data Upload.
 
 ![ESP8266_Sketch_Data_Upload](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/ESP8266_Sketch_Data_Upload.png)
 
