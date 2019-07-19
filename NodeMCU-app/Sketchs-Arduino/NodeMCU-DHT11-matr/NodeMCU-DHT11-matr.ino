@@ -1,3 +1,11 @@
+/*
+ATENCION!
+Antes que cualquier cosa, por favor,
+realice TODOS los pasos que indica el instructivo
+https://github.com/GridTICs/MatrIoTSASE2019/tree/master/NodeMCU-app/Configuracion-IDE-Arduino
+
+*/
+
 #include <Arduino.h>
 #include <FS.h>
 #include <ESP8266WiFi.h>
@@ -15,17 +23,21 @@
 // Insert your FQDN of your MQTT Broker
 #define MQTT_SERVER "a2sq3y7mdrjtom.iot.us-east-1.amazonaws.com"
 const char* mqtt_server = MQTT_SERVER;
-
-// WiFi Credentials
+//***** PRIMERO: completa el sssi y password de tu red Wifi *******//
+// WiFi Credentials en el archivo credentials.h
 const char* ssid = AP_1;
 const char* password = AP_1_PASS;
-
-// Fingerprint of the broker CA
+//***** SEGUNDO: certificados *******//
+// - Copia los certificados de tu dispositivo creado en Matr en la carpeta data
+// - Luego ejecuta el comando de abajo para obtener el valor del fingerprint del archivo rootCA.pem
+// - Completa en archivo credentials.h MY_FINGERPRINT
 // openssl x509 -in  rootCA.pem -sha1 -noout -fingerprint
 const char* fingerprint = MY_FINGERPRINT;
                            
 // Topic
+// home channel in Matr
 char* outTopic = "a8cb7cc3";
+// command channel in Matr
 char* inTopic = "3dff80bb";
 String clientName;
 
