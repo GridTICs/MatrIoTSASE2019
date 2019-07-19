@@ -11,6 +11,8 @@
 
 ## Slides
 
+Vamos a trabajar siguiendo los pasos de las slides.
+
 [1- Introducción a Internet de las cosas - MQTT](https://docs.google.com/presentation/d/1XVnJ0plecw3oD37Usjq8RfObKmwj6wM1WdNtZ2kQkAY/edit?usp=sharing)
 
 [2- Intro a Mat|r - Primera aplicación Mat|r con MQTT ](https://docs.google.com/presentation/d/1dJMVf1PW2CSBLgxwoCogAXe8xh_dOTfB2xqBnLhkxLo/edit?usp=sharing)
@@ -19,6 +21,13 @@
 
 ## Código fuente
 
+En las mismas presentaciones (slides) anteriores te iremos guiando donde se encuentra el código.
+
+### Caso de uso app SASE2019
+
+#### [Código en Matr](./Matr)
+
+#### [Código en Arduino](./NodeMCU-app)
 
 
 
