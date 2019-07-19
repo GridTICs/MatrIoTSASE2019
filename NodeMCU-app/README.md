@@ -25,7 +25,11 @@ En la mayoría de los casos para poder trabajar con placas basadas en el chip ES
 
 [En esta parte](Sketchs-Arduino/) se encuentran los códigos fuentes utilizados. El mismo deberá ser cargado en la placa a través del IDE Arduino y del puerto serie de la placa.
 
+### 4°) Conexión de la placa a la PC
 
+Para que nuestra PC y el IDE Arduino detecten el puerto serie, al cual se conecta la placa, deberemos tener la precaución de conectar primero 
+la placa a la PC con nuestro IDE Arduino cerrado. Una vez detectado el puerto abriremos nuestro IDE Arduino y lo seleccionaremos en tool -> Port  
 
+![Port](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Port.png)
 
 
