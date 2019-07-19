@@ -21,7 +21,7 @@ const char* ssid = AP_1;
 const char* password = AP_1_PASS;
 
 // Fingerprint of the broker CA
-// openssl x509 -in  mqttserver.crt -sha1 -noout -fingerprint
+// openssl x509 -in  rootCA.pem -sha1 -noout -fingerprint
 const char* fingerprint = MY_FINGERPRINT;
                            
 // Topic
