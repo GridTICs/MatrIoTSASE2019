@@ -66,13 +66,20 @@ Dentro de esta carpeta colocaremos los archivos con los certificados.
 
 ![certificados](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/certificados.png)
 
-Luego en el IDE Arduino nos dirigiremos a la seccion tool -> ESP8266 Sketch Data Upload.
+Luego tendremos que ir a tool -> Flash Size:
+
+Allí deberemos seleccionar la cantidad de memoria que ocuparan nuestros certificados. En este caso seleccionamos 1 MB debido a que la carpeta "data" es de solo 4 KB.
+
+![Flash-Size](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/Flash-Size.png) 
+
+Por último, en el IDE Arduino nos dirigiremos a la seccion tool -> ESP8266 Sketch Data Upload.
 
 ![ESP8266_Sketch_Data_Upload](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/NodeMCU-app/Configuracion-IDE-Arduino/ESP8266_Sketch_Data_Upload.png)
 
 Al clickear el Arduino IDE comenzara la subida de los archivos que se encuentran en la carpeta data a la placa.
 Deberemos esperar un tiempo hasta que nos diga que se completo en un 100% y listo.
-Debemos tener en cuenta que la carga de los archivos se debe realizar despues de la carga del sketch. Ademas la placa debe estar conectada para realizar la carga de los certificados.
+Debemos tener en cuenta que la carga de los archivos se debe realizar despues de la carga del sketch.
+Ademas la placa debe estar conectada para realizar la carga de los certificados.
 
 ## Librerías
 
@@ -86,7 +93,7 @@ En nuestro proyecto se usan los siguientes archivos de cabecera:
 #include <SPI.h>
 #include <time.h>
 #include <Wire.h>
-#include "Adafruit_SHT31.h"
+#include <DHT.h>
 #include "credentials.h"
 ```
 
@@ -113,7 +120,7 @@ Para que funcionen las cabeceras restantes deberemos agregar las siguientes libr
 
 ```
 #include <PubSubClient.h>
-#include "Adafruit_SHT31.h"
+#include <DHT.h>
 ```
 Primero deberemos ir a Tools > Manage Libraries...
 
