@@ -36,9 +36,9 @@ const char* fingerprint = MY_FINGERPRINT;
                            
 // Topic
 // home channel in Matr
-char* outTopic = "a8cb7cc3";
+char* outTopic = "88aa0a64";
 // command channel in Matr
-char* inTopic = "3dff80bb";
+char* inTopic = "a91b29a1";
 String clientName;
 
 char jsonStr[200];
@@ -88,6 +88,7 @@ void loadcerts() {
     return;
   }
   // Load client certificate file from SPIFFS
+  /****3ero) CAMBIAR LOS NOMBRES DE LOS CERTIFICADOS de acuerdo**/
   File cert = SPIFFS.open("/arduino.certificate.pem", "r"); //replace esp.der with your uploaded file name
   if (!cert) {
     Serial.println("Failed to open cert file");
