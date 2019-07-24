@@ -37,8 +37,12 @@ long lastReconnectAttempt = 0;
 int test_para = 5000;
 unsigned long startMills;
 
+int port = 8883;
+
+String archivo_crt = "/mosquitto.org.crt";
+
 WiFiClientSecure wifiClient;
-PubSubClient client(mqtt_server, 8883, wifiClient);
+PubSubClient client(mqtt_server, port, wifiClient);
 
 int ledPinRed = 12;     // LED connected to D6 but It is GPIO12
 
@@ -58,7 +62,7 @@ void verifytls() {
   // Use WiFiClientSecure class to create TLS connection
   Serial.print("connecting to ");
   Serial.println(mqtt_server);
-  if (!wifiClient.connect(mqtt_server, 8883)) {
+  if (!wifiClient.connect(mqtt_server, port)) {
     Serial.println("connection failed");
     return;
   }
@@ -76,7 +80,7 @@ void loadcerts() {
     return;
   }
   // Load client certificate file from SPIFFS
-  File ca = SPIFFS.open("/mosquitto.org.crt", "r"); //replace ca.der with your uploaded file name
+  File ca = SPIFFS.open(archivo_crt, "r"); //replace ca.der with your uploaded file name //Nombre de archivo "/mosquitto.org.crt"
   if (!ca) {
     Serial.println("Failed to open ca ");
   } else {

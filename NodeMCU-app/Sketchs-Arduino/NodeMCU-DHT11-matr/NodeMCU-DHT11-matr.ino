@@ -49,6 +49,16 @@ long lastReconnectAttempt = 0;
 int test_para = 5000;
 unsigned long startMills;
 
+int port = 8883;
+
+//En los siguientes STRING deberemos colocar luego de la barra el nombre del certificado descargado desde
+//la plataforma mat|r
+
+String archivo_certificate_pem = "/arduino.certificate.pem";
+String archivo_private_key = "/arduino.private-key.txt";
+String rootCA_pem = "/rootCA.pem";
+
+
 WiFiClientSecure wifiClient;
 PubSubClient client(mqtt_server, 8883, wifiClient);
 
@@ -89,7 +99,7 @@ void loadcerts() {
   }
   // Load client certificate file from SPIFFS
   /****3ero) CAMBIAR LOS NOMBRES DE LOS CERTIFICADOS de acuerdo**/
-  File cert = SPIFFS.open("/arduino.certificate.pem", "r"); //replace esp.der with your uploaded file name
+  File cert = SPIFFS.open(archivo_certificate_pem, "r"); //replace esp.der with your uploaded file name
   if (!cert) {
     Serial.println("Failed to open cert file");
   } else {
@@ -104,7 +114,7 @@ void loadcerts() {
     Serial.println("cert not loaded");
   }
  // Load client private key file from SPIFFS
-  File private_key = SPIFFS.open("/arduino.private-key.txt", "r"); //replace espkey.der with your uploaded file name
+  File private_key = SPIFFS.open(archivo_private_key, "r"); //replace espkey.der with your uploaded file name
   if (!private_key) {
     Serial.println("Failed to open private cert file");
   } else {
@@ -119,7 +129,7 @@ void loadcerts() {
     Serial.println("private key not loaded");
   }
   // Load CA file from SPIFFS
-  File ca = SPIFFS.open("/rootCA.pem", "r"); //replace ca.der with your uploaded file name
+  File ca = SPIFFS.open(rootCA_pem, "r"); //replace ca.der with your uploaded file name
   if (!ca) {
     Serial.println("Failed to open ca ");
   } else {
