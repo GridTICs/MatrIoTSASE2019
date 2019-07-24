@@ -53,7 +53,7 @@ Aceptamos el acuerdo e instalamos.
 
 ### Instalación mosquitto
 
-Ahora si nos dirigimos a la página de [eclipse mosquitto] (https://mosquitto.org/download/) y descargamos según la versión de nuestro sistema operativo.
+Ahora si nos dirigimos a la página de [eclipse mosquitto](https://mosquitto.org/download/) y descargamos según la versión de nuestro sistema operativo.
 
 ![Mosquitto-download](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/Mosquitto-download.png)
 
@@ -115,7 +115,7 @@ En esta nueva consola ingresaremos el siguiente comando.
 C:\Program Files\mosquitto>mosquitto_sub -h test.mosquitto.org -t matr -m "Hola Mundo!!!" -d
 ```
 
-###Uso de MQTT mediante el puerto seguro 8883.
+### Uso de MQTT mediante el puerto seguro 8883.
 
 Al usar la comunicación mediante el puerto 8883 deberemos usar un archivo certificado que nos provee el servidor.
 En nuestro caso haremos un ejemplo con el servidor "test.mosquitto.org".
