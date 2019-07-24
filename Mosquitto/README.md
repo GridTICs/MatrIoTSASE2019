@@ -127,11 +127,15 @@ Ahora procederemos de igual forma que en los anteriores puntos.
 Abrimos dos consolas y nos dirigiremos al lugar donde se encuentra instalado "mosquitto".
 En una escribiremos el siguiente comando.
 
+```
 C:\Program Files\mosquitto>mosquitto_sub -h test.mosquitto.org -t matrIn -p 8883 --cafile d:\Users\juan\Desktop\mosquitto.org.crt
+```
 
 En la otra escribiremos este comando.
 
+```
 C:\Program Files\mosquitto>mosquitto_pub -h test.mosquitto.org -t matrIn -p 8883 --cafile d:\Users\juan\Desktop\mosquitto.org.crt -m "{\"command\":\"TOGGLE-RELAY\",\"relayIdx\":1}"
+```
 
 Como se puede observar especificamos el puerto con la sentencia "-p 8883" en el anterior paso este paso se omitía y "mosquitto" suponía una comunicación se realizaría sobre el puerto 1883.
 
