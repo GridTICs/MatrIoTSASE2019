@@ -63,7 +63,7 @@ Ejecutamos el archivo ".exe" descargado.
 
 Seleccionamos la carpeta donde se instalaran los archivos del software.
 
-![Mosquitto-Folder](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/Mosquitto-Folder.png)
+![Mosquitto-folder](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/Mosquitto-folder.png)
 
 Hacemos clik en "Next".
 
@@ -147,5 +147,5 @@ C:\Program Files\mosquitto>mosquitto --help
 C:\Program Files\mosquitto>mosquitto_pub --help
 C:\Program Files\mosquitto>mosquitto_sub --help
 ```
-O visite la pagina de [eclipse mosquitto](https://mosquitto.org/) https://mosquitto.org/
+O visite la pagina de [https://mosquitto.org/](https://mosquitto.org/) https://mosquitto.org/
 
