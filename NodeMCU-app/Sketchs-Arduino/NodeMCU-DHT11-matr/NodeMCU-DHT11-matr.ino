@@ -3,7 +3,6 @@ ATENCION!
 Antes que cualquier cosa, por favor,
 realice TODOS los pasos que indica el instructivo
 https://github.com/GridTICs/MatrIoTSASE2019/tree/master/NodeMCU-app/Configuracion-IDE-Arduino
-
 */
 
 #include <Arduino.h>
@@ -23,21 +22,28 @@ https://github.com/GridTICs/MatrIoTSASE2019/tree/master/NodeMCU-app/Configuracio
 // Insert your FQDN of your MQTT Broker
 #define MQTT_SERVER "a2sq3y7mdrjtom.iot.us-east-1.amazonaws.com"
 const char* mqtt_server = MQTT_SERVER;
+
 //***** PRIMERO: completa el sssi y password de tu red Wifi *******//
 // WiFi Credentials en el archivo credentials.h
+
 const char* ssid = AP_1;
 const char* password = AP_1_PASS;
+
 //***** SEGUNDO: certificados *******//
 // - Copia los certificados de tu dispositivo creado en Matr en la carpeta data
 // - Luego ejecuta el comando de abajo para obtener el valor del fingerprint del archivo rootCA.pem
 // - Completa en archivo credentials.h MY_FINGERPRINT
 // openssl x509 -in  rootCA.pem -sha1 -noout -fingerprint
+
 const char* fingerprint = MY_FINGERPRINT;
                            
 // Topic
 // home channel in Matr
+
 char* outTopic = "88aa0a64";
+
 // command channel in Matr
+
 char* inTopic = "a91b29a1";
 String clientName;
 
@@ -58,11 +64,10 @@ String archivo_certificate_pem = "/arduino.certificate.pem";
 String archivo_private_key = "/arduino.private-key.txt";
 String rootCA_pem = "/rootCA.pem";
 
-
 WiFiClientSecure wifiClient;
-PubSubClient client(mqtt_server, 8883, wifiClient);
+PubSubClient client(mqtt_server, port, wifiClient);
 
-int ledPinRed = 12;     // LED connected to D6 but It is GPIO12
+int ledPinRed = 12;         // LED connected to D6 but It is GPIO12
 
 #define DHTTYPE DHT11       // DHT 11
 
@@ -80,7 +85,7 @@ void verifytls() {
   // Use WiFiClientSecure class to create TLS connection
   Serial.print("connecting to ");
   Serial.println(mqtt_server);
-  if (!wifiClient.connect(mqtt_server, 8883)) {
+  if (!wifiClient.connect(mqtt_server, port)) {
     Serial.println("connection failed");
     return;
   }

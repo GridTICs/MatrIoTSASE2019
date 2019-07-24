@@ -16,17 +16,23 @@
 #define MQTT_SERVER "test.mosquitto.org"
 const char* mqtt_server = MQTT_SERVER;
 
-// WiFi Credentials
+//***** PRIMERO: completa el sssi y password de tu red Wifi *******//
+// WiFi Credentials en el archivo credentials.h
+
 const char* ssid = AP_1;
 const char* password = AP_1_PASS;
 
-// Fingerprint of the broker CA
-// openssl x509 -in  mqttserver.crt -sha1 -noout -fingerprint
+//***** SEGUNDO: certificados *******//
+// - Copia los certificados de tu dispositivo creado en Matr en la carpeta data
+// - Luego ejecuta el comando de abajo para obtener el valor del fingerprint del archivo rootCA.pem
+// - Completa en archivo credentials.h MY_FINGERPRINT
+// openssl x509 -in mosquitto.org.crt -sha1 -noout -fingerprint
+
 const char* fingerprint = MY_FINGERPRINT;
                            
 // Topic
-char* outTopic = "MatrOut";
-char* inTopic = "MatrIn";
+char* outTopic = "matrOut";
+char* inTopic = "matrIn";
 String clientName;
 
 char jsonStr[200];
