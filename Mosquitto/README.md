@@ -145,5 +145,5 @@ C:\Program Files\mosquitto>mosquitto --help
 C:\Program Files\mosquitto>mosquitto_pub --help
 C:\Program Files\mosquitto>mosquitto_sub --help
 ```
-O visite la pagina de [https://mosquitto.org/](https://mosquitto.org/) https://mosquitto.org/
+O visite la pagina de [eclipse mosquitto](https://mosquitto.org/).
 
