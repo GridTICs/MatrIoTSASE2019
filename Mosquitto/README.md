@@ -69,13 +69,11 @@ Hacemos clik en "Next".
 
 ![Mosquitto-Service](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/Mosquitto-Service.png)
 
-Nuevamente en "Next".
+Y luego "Finish".
 
 ![Mosquitto-fin](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/Mosquitto-fin.png)
 
-Y luego "Finish"
-
-Ya tenemos instalado en windows mosquitto.
+Ya tenemos instalado en Windows mosquitto.
 
 ## Primeros Pasos
 
