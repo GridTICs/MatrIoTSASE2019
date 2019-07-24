@@ -33,7 +33,7 @@ Y destildamos la opción por defecto y realizamos click en "Install".
 
 ### Instalación Visual C++ para Visual Studio 2015
 
-Deberemos ir a la siguiente [página] (https://www.microsoft.com/es-ar/download/details.aspx?id=48145)
+Deberemos ir a la siguiente [página](https://www.microsoft.com/es-ar/download/details.aspx?id=48145)
 
 ![VisualC](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/VisualC.png)
 
