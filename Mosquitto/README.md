@@ -1,10 +1,10 @@
-#mosquitto
+# mosquitto
 Este es un pequeño tutorial para el uso del protocolo MQTT mediante el software "mosquitto"
 
-##Instalación en Windows
+## Instalación en Windows
 Para utilizar mosquitto sobre sistemas operativos Windows deberemos instalar programas adicionales.
 
-###Instalación OpenSSL
+### Instalación OpenSSL
 OpenSSL es un software que nos ayudara a la hora de realizar comunicaciones encriptadas.
 Para instalarlo debemos dirigirnos al siguiente [enlace](https://slproweb.com/products/Win32OpenSSL.html)
 
@@ -31,7 +31,7 @@ Y destildamos la opción por defecto y realizamos click en "Install".
 
 ![OpenSSL-Free](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/OpenSSL-Free.png)
 
-###Instalación Visual C++ para Visual Studio 2015
+### Instalación Visual C++ para Visual Studio 2015
 
 Deberemos ir a la siguiente [página] (https://www.microsoft.com/es-ar/download/details.aspx?id=48145)
 
@@ -51,7 +51,7 @@ Aceptamos el acuerdo e instalamos.
 
 ![VisualC-Acuerdo](https://github.com/GridTICs/MatrIoTSASE2019/blob/master/Mosquitto/VisualC-Acuerdo.png)
 
-###Instalación mosquitto
+### Instalación mosquitto
 
 Ahora si nos dirigimos a la página de [eclipse mosquitto] (https://mosquitto.org/download/) y descargamos según la versión de nuestro sistema operativo.
 
@@ -79,7 +79,7 @@ Ya tenemos instalado en windows mosquitto.
 
 ## Primeros Pasos
 
-###Uso de MQTT mediante el puerto 1883.
+### Uso de MQTT mediante el puerto 1883.
 
 Al utilizar el puerto 1883 no es necesario el uso de archivos certificados para realizar una comunicación con MQTT.
 Para esta demostración además utilizaremos el servidor que nos provee la página de "eclipse mosquitto".
