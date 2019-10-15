@@ -40,11 +40,11 @@ const char* fingerprint = MY_FINGERPRINT;
 // Topic
 // home channel in Matr
 
-char* outTopic = "88aa0a64";
+char* outTopic = "6ac8a017";
 
 // command channel in Matr
 
-char* inTopic = "a91b29a1";
+char* inTopic = "baa2798d";
 String clientName;
 
 char jsonStr[200];
@@ -60,8 +60,8 @@ int port = 8883;
 //En los siguientes STRING deberemos colocar luego de la barra el nombre del certificado descargado desde
 //la plataforma mat|r
 
-String archivo_certificate_pem = "/arduino.certificate.pem";
-String archivo_private_key = "/arduino.private-key.txt";
+String archivo_certificate_pem = "/arduinotest.certificate.pem";
+String archivo_private_key = "/arduinotest.private-key.txt";
 String rootCA_pem = "/rootCA.pem";
 
 WiFiClientSecure wifiClient;
